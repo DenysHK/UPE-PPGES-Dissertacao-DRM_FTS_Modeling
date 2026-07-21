@@ -7,7 +7,7 @@ Entrada esperada: dois arquivos .xlsx no mesmo diretório deste script:
   2) RESULTADOS_Gray2024_FeKSiO2_HTFT_H2CO_1.80a2.20_WF_P5a40.xlsx
 
 Saída padrão:
-  MEMORIA_FINAL_ACOPLAMENTO_RSB_SFT.xlsx
+  Selecao_acoplamento_RSB_SFT.xlsx
 
 Observação metodológica:
   O script não faz simulação nova nem define uma planta industrial integrada.
@@ -842,7 +842,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Gera planilha de memória final de cálculo para acoplamento conceitual RSB-SFT.")
     parser.add_argument("--rsb", type=str, default=None, help="Arquivo RSB_Results.xlsx")
     parser.add_argument("--sft", type=str, default=None, help="Arquivo RESULTADOS_Gray2024_...xlsx")
-    parser.add_argument("--saida", type=str, default="MEMORIA_FINAL_ACOPLAMENTO_RSB_SFT.xlsx", help="Nome do arquivo .xlsx de saída")
+    parser.add_argument("--saida", type=str, default="Selecao_acoplamento_RSB_SFT.xlsx", help="Nome do arquivo .xlsx de saída")
     parser.add_argument("--top", type=int, default=None, help="Número de cenários destacados da RSB")
     args = parser.parse_args()
 
